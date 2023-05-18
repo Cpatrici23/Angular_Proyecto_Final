@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CardGalleryComponent } from './cards/card-gallery/card-gallery.component';
 import { CardDetailComponent } from './cards/card-detail/card-detail.component';
 import { CardFormComponent } from './cards/card-form/card-form.component';
+import { AnniComponent } from './cards/anni/anni.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
     path: 'card-form',
     component: CardFormComponent,
 
+  },
+  {
+    path:'card-anni',
+    component: AnniComponent
   },
   {
      path:'',

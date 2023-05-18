@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CardGalleryComponent } from './card-gallery/card-gallery.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
 import { CardFormComponent } from './card-form/card-form.component';
+import { AnniComponent } from './anni/anni.component';
 
 
 
@@ -10,7 +11,8 @@ import { CardFormComponent } from './card-form/card-form.component';
   declarations: [
     CardGalleryComponent,
     CardDetailComponent,
-    CardFormComponent
+    CardFormComponent,
+    AnniComponent
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import { CardFormComponent } from './card-form/card-form.component';
   exports:[
     CardDetailComponent,
     CardFormComponent,
-    CardGalleryComponent
+    CardGalleryComponent,
+    AnniComponent
   ]
 
 })
