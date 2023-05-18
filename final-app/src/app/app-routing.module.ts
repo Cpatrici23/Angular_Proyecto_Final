@@ -20,7 +20,7 @@ const routes: Routes = [
 
   },
   {
-    path:'card-anni',
+    path:'anni',
     component: AnniComponent
   },
   {
