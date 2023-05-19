@@ -4,6 +4,7 @@ import { CardGalleryComponent } from './card-gallery/card-gallery.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
 import { CardFormComponent } from './card-form/card-form.component';
 import { AnniComponent } from './anni/anni.component';
+import { DetailComponent } from './card-detail/detail/detail.component';
 
 
 
@@ -12,7 +13,9 @@ import { AnniComponent } from './anni/anni.component';
     CardGalleryComponent,
     CardDetailComponent,
     CardFormComponent,
-    AnniComponent
+    AnniComponent,
+    DetailComponent,
+  
   ],
   imports: [
     CommonModule

@@ -7,13 +7,15 @@ import { CardsModule } from './cards/cards.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    CardsModule
+    CardsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
