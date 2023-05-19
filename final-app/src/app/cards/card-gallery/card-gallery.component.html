@@ -1,13 +1,10 @@
 <div class="container">
 
 
-  <div *ngFor="let card of cards" >
-    <div>
-  <img src="{{card.thumbnailUrl}}" alt="{{card.title}}">
+  <div *ngFor="let flag of flags, index as i" class="card">
+    <img src="{{flag}}" alt="{{names[i]}}">
+    <h3>{{names[i]}}</h3>
+    <p>{{subRegion[i]}}</p>
 
-  <h3>{{card.id}}</h3>
-  <p class="txt">{{card.title}}</p>
-    </div>
   </div>
-</div>
 

@@ -8,17 +8,30 @@ import { ICard } from 'src/app/models/card';
   styleUrls: ['./card-gallery.component.css']
 })
 export class CardGalleryComponent implements OnInit{
- cards: ICard[] = []
-constructor(private cardService: CardService){}
+  cards: ICard[] = []
+  names: string[] = []
+  flags: string[] = []
+  subRegion: string[] = []
+  constructor(private cardService: CardService){}
 
   ngOnInit(): void {
-    this.cardService.getAll().subscribe(cards => {
-      this.cards = cards
+  this.cardService.getAll().subscribe(cards => {
+    console.log(cards);
+    this.cards = cards;
+    cards.forEach((card: any)=> {
+      this.names.push(card['name'].common);
+
+      console.log(this.names);
+      this.flags.push(card['flags'].png)
+      this.subRegion.push(card['subregion'])
     })
 
-   
 
-  }
+
+
+      })
+}
+
 
 
 }
