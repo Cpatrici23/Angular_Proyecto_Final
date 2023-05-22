@@ -13,5 +13,8 @@ cardUrl: string = "https://jsonplaceholder.typicode.com/photos";
   getAll(): Observable<ICard[]> {
     return this.http.get<ICard[]>(this.cardUrl);
   }
+
+  
+
  
 }
